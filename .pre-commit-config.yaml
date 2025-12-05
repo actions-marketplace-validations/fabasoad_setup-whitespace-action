@@ -15,7 +15,7 @@ repos:
         args: []
         files: ^(.*\.md|.*\.yaml|.*\.yml)$
         # https://github.com/prettier/prettier/releases
-        additional_dependencies: ["prettier@3.6.2"]
+        additional_dependencies: ["prettier@3.7.4"]
         stages: ["pre-commit"]
   # Security
   - repo: https://github.com/Yelp/detect-secrets
@@ -23,7 +23,7 @@ repos:
     hooks:
       - id: detect-secrets
   - repo: https://github.com/gitleaks/gitleaks
-    rev: v8.29.0
+    rev: v8.30.0
     hooks:
       - id: gitleaks
   - repo: https://github.com/fabasoad/pre-commit-grype
@@ -36,7 +36,7 @@ repos:
         stages: ["pre-push"]
   # Markdown
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.45.0
+    rev: v0.46.0
     hooks:
       - id: markdownlint-fix
         stages: ["pre-commit"]
@@ -55,7 +55,7 @@ repos:
         stages: ["pre-push"]
   # GitHub Actions
   - repo: https://github.com/rhysd/actionlint
-    rev: v1.7.8
+    rev: v1.7.9
     hooks:
       - id: actionlint
         args: ["-pyflakes="]
